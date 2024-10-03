@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web Hosting Template">
+    <meta name="description" content="Ease2AI - Hosting Bootstrap 5 HTML Template">    
+    <title>Ease2AI - Sign in</title>
+    <!-- favicon -->
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="static/css/bootstrap-icons.css">
+    <!-- glyphter font -->
+    <link rel="stylesheet" href="static/css/Glyphter.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <!-- owl carousel theme -->
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <!-- vmap -->
+    <link rel="stylesheet" href="static/css/jqvmap.min.css">  
+    <!-- ion rangeSlider -->
+    <link rel="stylesheet" href="static/css/ion.rangeSlider.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="static/css/custom.css">
+</head>
+<body>
+
+    <!-- Create account -->
+    <section class="account">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6">
+                            <img src="static/picture/sign-in.png" class="img-fluid d-none d-lg-block mx-auto pe-5" alt="Login">
+                        </div>
+                        <div class="col-lg-6">
+                            <form id="login" action="admin" method="post">
+                                <div class="account__create">
+                                    <h3>登录Ease2AI</h3>
+
+                                    <h6 id="prompt" style="color: red;">{{data}}</h6>
+                                    <p>没有账号？<a class="anchor__blue" href="sign-up.html">创建账号</a></p>
+                                    
+                                    <div class="account__create--input">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="email"><i class="bi bi-person"></i></span>
+                                            <input id="email_in" type="text" name="email" class="form-control" placeholder="email" aria-label="email" aria-describedby="email" >
+                                        </div>
+                                        <div class="input-group mb-4">
+                                            <span class="input-group-text" id="Password"><i class="bi bi-key"></i></span>
+                                            <input type="text" class="form-control" name="password" placeholder="Password" aria-label="Password" aria-describedby="Password">
+                                        </div>
+                                        <div class="d-block d-xl-flex justify-content-between">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        记住我
+                                                    </label>
+                                            </div>
+                                            <div>
+                                                <p><a href="#" class="anchor__blue">忘记密码</a></p>
+                                            </div>                                          
+                                        </div>
+                                        <a onclick="submit()" class="btn btn-Ease2AI-primary d-block mt-4">登   录</a>                                    
+                                    </div>                                                              
+                                </div>
+
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: Create account -->
+
+    <!-- jQuery -->
+    <script src="static/js/jquery.min.js"></script>
+    <!-- jQuery ajaxchimp -->
+    <script src="static/js/jquery.ajaxchimp.min.js"></script>
+    <!-- bootstrap bundle js -->
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery waypoints -->
+    <script src="static/js/jquery.waypoints.js"></script>       
+    <!-- counterup 2 -->
+    <script src="static/js/counterup2-1.0.1.min.js"></script>
+    <!-- owl carousel -->
+    <script src="static/js/owl.carousel.min.js"></script>
+    <!-- magnific popup -->
+    <script src="static/js/jquery.magnific-popup.js"></script>
+    <!-- jQuery vmap -->
+    <script src="static/js/jquery.vmap.min.js"></script>
+    <!-- jQuery vmap world -->
+    <script src="static/js/jquery.vmap.world.js"></script>
+    <!-- jQuery vmap sample data -->
+    <script src="static/js/jquery.vmap.sampledata.js"></script>  
+    <!-- ion rangeSlider -->
+    <script src="static/js/ion.rangeSlider.min.js"></script>
+    <!-- custom js -->
+    <script src="static/js/custom.js"></script>
+    <script>
+        function submit(){
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(emailRegex.test($("#email_in").val())){
+                $("#login").submit()
+            }else{
+                $("#prompt").text("邮箱格式不对");
+            }
+        }
+        
+    </script>
+</body>
+</html>

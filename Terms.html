@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://ease2ai.com/privacy.html -->
+<html lang="en"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ease2AI 软件用户协议</title>
+</head>
+<body>
+    <div>
+        <h1>Ease2AI 软件用户使用协议</h1>
+
+        <h6>本用户使用协议最近一次更新日期为2023年11月11日</h6>
+    </div>
+    <div>
+        <h2>导语</h2>
+        Ease2AI 软件使用协议是您与 Ease2AI开发者 韦永 (下文称为软件提供者) 之间关于使用Ease2AI软件的法律协议。
+
+    </div>
+  <div class="WordSection1" style="padding:15px;">
+    <p class="MsoNormal" style="margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:14pt;">1. 接受协议条款</span></b>
+    </p>
+    <p class="MsoNormal" style="text-align:left;">
+        <span style=" font-size:12pt;">通过安装、使用或以其他方式访问Ease2AI 软件，您同意遵守本用户协议的所有条款和条件。如果您不同意这些条款，请停止使用本软件。</span>
+    </p>
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b>2. 许可</b>
+    </p>
+    <p class="MsoNormal" style="text-align:left;">
+        <span lang="EN-US" style=" font-size:12pt;">我们会出于本隐私政策所述的以下目的，收集和使用您的个人信息：<br>
+        <br>
+        软件提供者授予您有限的、非排他性的、非转让的许可，以使用本软件。该许可仅适用于符合本协议的条件。<br>
+        </span>
+    </p>
+
+
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:13.5pt;">3. 用户权利和责任</span></b>
+    </p>
+    <p class="MsoNormal" style="text-align:left;">
+        <font size="3"><br>
+        3.1 您有权使用本软件，但不得进行以下行为：
+            - 逆向工程、反汇编或试图获取源代码；<br>
+            - 复制、修改、分发或转售软件；<br>
+            - 违反适用法律或本协议的任何规定。<br>
+            - 商业用途。
+    
+    <br>
+    3.2 您对通过本软件上传的任何内容负有责任，不得违反第三方的知识产权或侵犯他人的权利。
+        </font>
+    </p>
+    
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:13.5pt;">4. 知识产权</span></b>
+    </p>
+    <p class="MsoNormal" style="margin-left: 0cm">
+        4.1 本软件的所有知识产权归软件提供者所有。<br>
+        4.2 您不得复制、修改、传播、出售或以其他方式使用本软件的任何部分，除非经软件提供者明示许可。<br>
+    </p>
+
+    <!-- <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;"></p> -->
+
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:13.5pt;">5. 隐私政策</span></b>
+    </p>
+    <p class="MsoNormal" style="margin-left: 0cm">
+        您同意软件提供者按照其隐私政策处理您的个人信息。隐私政策可在[链接]找到。<br>
+    </p>
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:13.5pt;">6. 协议的修改</span></b>
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 0cm">
+        <br>软件提供者有权随时修改本协议，并将更新日期更新为最新修改日期。继续使用本软件即表示您接受修改后的协议。
+    </p>
+
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:13.5pt;">7. 终止协议</span></b>
+    </p>
+    <p class="MsoNormal" style="margin-left: 0cm">
+        软件提供者有权在不提前通知的情况下终止您对本软件的许可，如果您违反了本协议的任何规定。
+    </p>
+
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:13.5pt;">8. 适用法律和争议解决</span></b>
+    </p>
+    <p class="MsoNormal" style="margin-left: 0cm">
+        本协议受中华人民共和国的管辖。
+    </p>
+
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:13.5pt;">9. 联系方式</span></b>
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 0cm">
+        如果您对本协议有任何问题，请联系ease2ai@outlook.com
+    </p>
+
+
+    <p class="MsoNormal" style="margin-top:24.75pt;margin-right:0cm; margin-bottom:14.25pt;margin-left:0cm;text-align:left;line-height:21pt;">
+        <b><span style=" font-size:13.5pt;">10. 更改或者取消订阅付费</span></b>
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 0cm"></p>
+    
+    要从按月计费切换到按年计费，请前往网络应用程序中的“设置”>“计费” 。如果您想恢复按月计费，请在续订日期之前联系我们的客户支持团队。
+    
+    您可以随时从工作区设置取消订阅。
+
+    如果您取消订阅，您将继续不间断地访问已付费的产品和服务，直到当前计费周期结束。
+
+    对于按年订阅，如果您在付款后 30 天内取消，可以联系我们以获得退款。
+
+    在您的年度订阅续订之前，我们始终会向您的结算联系人地址发送一封提醒电子邮件，这样您就不会因意外付款而感到惊讶。
+    </p>
+
+    <p class="MsoNormal"></p>
+</div>
+
+
+
+</body></html>
